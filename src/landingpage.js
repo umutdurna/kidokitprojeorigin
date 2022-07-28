@@ -19,7 +19,7 @@ const Landingpage = ()=> {
           <div id='background'></div>
           <div class="buttonTop">
             <button class='button' onClick={() =>{
-            navigate('/Landingpage')
+            navigate('/kayıtol')
                 }}> Kayıt Ol</button>
           </div>
         <div class="footer">
