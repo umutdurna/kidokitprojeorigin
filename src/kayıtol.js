@@ -1,12 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 
 
 
-function kayitol() {
+
+
+const KayıtOl = () => {
     return (
-      <div></div>
+      <p>asdasd</p>
+      // // <div formKısmı>
+      // //   <form method='GET'>
+      // //     <div>
+      // //       <input type="text" id="text" name="text"/>
+          
+      // //     </div>
+          
+
+
+      //   </form>
+      // </div>
     );
   }
 
-  export default kayitol;
+  export default KayıtOl;
