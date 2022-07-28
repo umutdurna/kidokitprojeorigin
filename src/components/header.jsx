@@ -1,6 +1,6 @@
 import React from 'react'
 import resim1 from '../img/beyazlogo.png';
-import './header.css'
+import './header.css';
 
 
 
