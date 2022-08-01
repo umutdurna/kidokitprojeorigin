@@ -5,18 +5,17 @@ import KayıtOl from './kayitol';
 
 
 
+
 const App=() => {
   return (
 
     <Router>
-   <div>
-   <Routes>
-
-   <Route path="/" element={<Landingpage/>} />
-    <Route path="/kayitol" element={<KayıtOl/>} />
-  </Routes>
-    </div>
-
+          <div>
+            <Routes>
+              <Route path="/" element={<Landingpage/>} />
+              <Route path="/kayitol" element={<KayıtOl/>} />
+            </Routes>
+          </div>
     </Router>
   );
 }
