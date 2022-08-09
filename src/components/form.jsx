@@ -8,6 +8,9 @@ class Form extends Component {
     return (
 
      <div className="card-body">
+      <div>
+        <h1>Kayıt Olun</h1>
+      </div>
         <form action="GET">
             <label htmlFor="name">Ad ve Soyadınız</label>
             <br/>
@@ -16,10 +19,12 @@ class Form extends Component {
             <label htmlFor="sifre">Bir şifre belirleyiniz</label>
             <br/>
             <label htmlFor="Çocuğun ismi?"></label>
+            <br />
             <br/>
             <input type="text" id='ismi' />
             <br/>
-            <label htmlFor="Çocuğunuzun Cinsiyet?"></label>
+            <label htmlFor="Çocuğunuzun Cinsiyet?">Çocuğunuzun Cinsiyeti</label>
+            <br />
             <br/>
             <label htmlFor="erkek">Erkek</label>
             <input type="radio" />
@@ -27,15 +32,10 @@ class Form extends Component {
             <input type="radio" />
             <br/>
             <br/>
-            <label htmlFor="e-mail">E-posta adresinizi yazınız</label>
-            <br/>
-            <input type="e-mail" />
-            <br/>
-            <label htmlFor="sifreBelirle">Bir şifre belirleyiniz</label>
-            <br/>
-            <input type="passowrd" />
-            <br/>
-            <label htmlFor="dogumTarihi">Çocuğun Doğum Tarihi?</label>
+            <label htmlFor="Çocuğun İsmi?">Çocuğun İsmi?</label>
+            <br />
+            <br />
+            <input type='text' id='cocugunismi' />
 
         </form>
      </div>
