@@ -14,7 +14,7 @@ const Landingpage = ()=> {
       <div className="App">
         <Header/>
         <div class='hosGeldiniz'>
-          <h2 class="hosGeldinizH2">Hoş geldinisz!</h2>
+          <h2 class="hosGeldinizH2">Hoş geldiniz!</h2>
         </div>
         <div class='paragraf'>
           <p>Çocuğunuzu büyütürken artık yalnız değilsiniz!</p>
