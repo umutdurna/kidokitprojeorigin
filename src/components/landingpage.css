@@ -1,0 +1,65 @@
+.arkaplan{
+    color: white;
+    background: url(/src/img/background.png) no-repeat center center fixed;;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .hosGeldiniz{
+    position: relative;
+    top: 100px;
+    bottom: 100px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 51px;
+  }
+  
+  .paragraf{
+    font-size: 25px;
+  }
+  
+  .buttonTop{
+    text-align: center;
+    color: white;
+  }
+  
+  .hosGeldiniz{
+    padding: 75px;
+  }
+  
+  .zatenBir{
+    margin-top: 150px;
+    font-size: 25px;
+  }
+  
+  .girisYap{
+    font-weight: bold;
+  }
+  
+  .buttonTop{
+    width: 150px;
+    position: absolute;
+    left: 46%;
+  }
+  
+  .button{
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    color: #735EBB;
+    font-size: 25px;
+    border-color: white;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .footer{
+    position: relative;
+    top: 80px;
+  }
+  

@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/header';
 import './App.js';
+import './components/landingpage.css';
 
 import {useNavigate} from 'react-router-dom';
 
