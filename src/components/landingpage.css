@@ -30,16 +30,7 @@
   .hosGeldiniz{
     padding: 75px;
   }
-  
-  .zatenBir{
-    margin-top: 150px;
-    font-size: 25px;
-  }
-  
-  .girisYap{
-    font-weight: bold;
-  }
-  
+   
   .buttonTop{
     width: 150px;
     position: absolute;
@@ -62,4 +53,18 @@
     position: relative;
     top: 80px;
   }
+
+  .footer-text-one{
+    margin-top: 180px;
+    text-align: center;
+    color: white;
+  }
+
+  .footer-text-one a{
+    text-align: center;
+    color: white;
+    text-underline-position: unset;
+  }
+
+
   
