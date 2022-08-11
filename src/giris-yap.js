@@ -64,6 +64,8 @@ const GirisYap = () => {
         setSuccess(true);
     }
 
+    // const [inp,setInp]=useState();
+
     const girisIstekleri = async () => {
         const requestOptions = {
             method: 'POST',
@@ -85,8 +87,9 @@ const GirisYap = () => {
 
 
     return (
-     
+
         <div className='girisYap-form'>
+            {/* <input type="text" value={inp} onChange={(val) => setInp(val.currentTarget.value)} /> */}
             <h1 className='header'>Giriş Yap</h1>
             <div className="form">
                 <form onSubmit={handleSubmit}>
@@ -110,15 +113,13 @@ const GirisYap = () => {
                         <a href="/forgot-password">Şifremi Unuttum</a>
                     </div>
                     <br/>
+                    
                     <div className="submit">
                         <input type="submit" value="Giriş Yap" onClick={async () => {
                             trueHandle();
                             values.password && values.username && await girisIstekleri() && navigate('/girisYapildi')
                         }} focused={success.toString()} />
-                        <br />
-                        <br />
-                        <br />
-                        <span>Hatalı Giriş!</span>
+                        <span>Kullanıcı adı veya şifre hatalı</span>
                     </div>
                 </form>
             </div>
