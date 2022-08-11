@@ -209,11 +209,11 @@ const KayıtOl = () => {
                   <div className="item-four">
                     <div className="child-gender">
                         <p>Çocuğunuz'un Cinsiyeti</p>
-                        <div className="buttons">
+                        {/* <div className="buttons">
                             <ButtonGroup>
                                 {radios.map((radio, idx))}
                             </ButtonGroup>
-                        </div>
+                        </div> */}
                     </div>
                   </div>
                 </div>
