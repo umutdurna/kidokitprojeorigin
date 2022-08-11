@@ -18,7 +18,7 @@
 }
 
 .girisYap-form .form .inputs{        /* Formun içindeki inputlara alttan %10 verme */
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .girisYap-form .form input{
@@ -33,15 +33,18 @@
 .girisYap-form .form .submit {
     display: flex;                  /* Butonu ortalama ve fixleme */
     justify-content: center;
+    align-items: center;
 }
 
 .girisYap-form .form .submit input {
     background-color: #735EBB;
     color: #fff;
-    font-size: 20px;
+    font-size: 0.9rem;
+    width: auto;
+    height: 50px;
     text-align: center;             /* Submitin içindeki Giriş yap butonunu şekillendirme*/
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 25%;
+    padding-right: 25%;
     padding-bottom: 2%;
     padding-top: 2%;
     border-radius: 1.2rem;
@@ -53,12 +56,22 @@
     color: #735EBB;         /* İnputun üstüne gelince renk değiştirmesini sağlar */
 }
 
-span {
-    font-size: 10px;
+span{
+    font-size: 1rem;
     color: #3CD77A;     
     padding: 2%;            
-    display: none;              /* Şifre Yanlış kısmını gizleme */
+    display: none;  /* Şifre Yanlış kısmını gizleme */
 }
+
+/* Span içindekini gizledik ama çağırmamız lazım */
+
+input:invalid[focused="true"]~span {
+    display: block;
+  }
+
+  input:valid[focused="false"]~span {
+    display: block;
+  }
 
 .girisYap-form .form .links{
     margin-top: -5%;
@@ -69,5 +82,7 @@ span {
 .girisYap-form .form .links a{
     text-decoration: none;          /* Şifremi unuttum alt yazısı kaldırma */
 }
+
+
 
 

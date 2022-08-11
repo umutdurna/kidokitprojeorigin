@@ -115,7 +115,10 @@ const GirisYap = () => {
                             trueHandle();
                             values.password && values.username && await girisIstekleri() && navigate('/girisYapildi')
                         }} focused={success.toString()} />
-                        <span>Yanlış Bilgi!</span>
+                        <br />
+                        <br />
+                        <br />
+                        <span>Hatalı Giriş!</span>
                     </div>
                 </form>
             </div>
