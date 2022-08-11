@@ -1,0 +1,73 @@
+.girisYap-form .header{
+    text-align: center;
+    color: #735EBB;       /* Giris Yap Sayfasındaki Header yani (Giriş Yap) yazan kısım */
+    margin-top: 8%;    
+}
+
+.girisYap-form .form{
+    margin-top: 2%;              /* Form'u ortalama */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.girisYap-form .form p{
+    font-size: 1.2rem;            /*  E-Posta ve Password yazan kısmı renklendirme fontunu büyütme ve kalınlaştırma */
+    border-color: #735EBB;
+    font-weight: bold;
+}
+
+.girisYap-form .form .inputs{        /* Formun içindeki inputlara alttan %10 verme */
+    margin-bottom: 10%;
+}
+
+.girisYap-form .form input{
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;              /*  E posta ve passwordun sahip olduğu inputu büyütme  */
+    border-radius: 1rem;             
+    border-color: #735EBB;
+    background-color: #44A6B41A;    /* Çerçevesine renk verme  */
+}
+
+.girisYap-form .form .submit {
+    display: flex;                  /* Butonu ortalama ve fixleme */
+    justify-content: center;
+}
+
+.girisYap-form .form .submit input {
+    background-color: #735EBB;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;             /* Submitin içindeki Giriş yap butonunu şekillendirme*/
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    border-radius: 1.2rem;
+    cursor: pointer;
+}
+
+.girisYap-form .form .submit input:hover{
+    background-color: #fff;
+    color: #735EBB;         /* İnputun üstüne gelince renk değiştirmesini sağlar */
+}
+
+span {
+    font-size: 10px;
+    color: #3CD77A;     
+    padding: 2%;            
+    display: none;              /* Şifre Yanlış kısmını gizleme */
+}
+
+.girisYap-form .form .links{
+    margin-top: -5%;
+    margin-bottom: 10%;             /* Şifremi unuttum kısmı*/
+    text-align: center;
+}
+
+.girisYap-form .form .links a{
+    text-decoration: none;          /* Şifremi unuttum alt yazısı kaldırma */
+}
+
+
