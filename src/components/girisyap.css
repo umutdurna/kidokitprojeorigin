@@ -34,6 +34,7 @@
     display: flex;                  /* Butonu ortalama ve fixleme */
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .girisYap-form .form .submit input {
@@ -55,6 +56,8 @@
     background-color: #fff;
     color: #735EBB;         /* İnputun üstüne gelince renk değiştirmesini sağlar */
 }
+
+
 
 span{
     font-size: 1rem;
