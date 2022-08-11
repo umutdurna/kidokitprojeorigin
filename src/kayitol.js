@@ -1,16 +1,11 @@
-import './App.css';
-import Form from './components/form';
-
-
 
 
 
 const KayıtOl = () => {
-    return (
-     <Form/> 
-     
-    
-    );
-  }
 
+    return (
+     <div>Kayıt Ol Formu Gelecek</div>
+    );
+}
+    
   export default KayıtOl;
