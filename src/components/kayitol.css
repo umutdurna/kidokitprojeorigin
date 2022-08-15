@@ -1,5 +1,164 @@
 /* kayıt ol css */
+/*  form : kayitol-form */
 
-.ssss{
-    background-color: aqua;
+.kayitol-form .header{
+    text-align: center;
+    color: #735EBB;
+    margin-top: 4%;
+}
+
+.kayitol-form .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    min-width: 100vh;
+    min-height: 100%;
+}
+
+.kayitol-form .item-one{
+    display: flex;
+}
+
+.kayitol-form .item-two{
+    display: flex;
+}
+
+.kayitol-form .item-three{
+    display: flex;
+}
+.kayitol-form .item-four{
+    display: flex;
+}
+
+.kayitol-form .item-five{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kayitol-form .form p{
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.kayitol-form .form input{
+    width: 100%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    border-radius: 0.7rem;
+    border-color: #735EBB;
+    background-color: #44A6B41A;
+}
+
+.kayitol-form .form .item-one .mail{
+    margin-left: 1%;
+}
+.kayitol-form .form .item-one .name{
+    padding-right: 50px;
+}
+
+.kayitol-form .form .item-two .password{
+    margin-right: 8%;
+}
+
+.kayitol-form .item-two .password-2{
+    margin-right: 8%;
+}
+
+.kayitol-form .form .item-three .child-name{
+    margin-right: 15%;
+}
+
+.kayitol-form .form .item-three .child-birth{
+    margin-right: 11%;
+}
+
+.kayitol-form .form .item-four .child-gender{
+    margin-right: 11%;
+}
+
+.kayitol-form .form .item-four .child-gender button{
+    border-color: white;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 5%;
+    margin-right: 5%;
+}
+
+.kayitol-form .form .item-four .child-gender button:hover{
+    color: #735EBB;
+    border-color: #735EBB;
+    background-color: white;
+}
+
+.kayitol-form .form .item-four .message{
+    display: flex;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+.kayitol-form .form .item-four .message .tip{
+    background-image: url('../img/zorunlu.png');
+    background-repeat: no-repeat;
+    width: 18.5px;
+    height: 15.5px;
+    margin-top: 5%;
+}
+
+.kayitol-form .form .item-four .message .text{
+    font-size: 13px;
+}
+
+.kayitol-form .form .item-four .toggle-buttons{
+    margin-left: 1px;
+}
+
+.kayitol-form .form .item-five .checkbox{
+    margin-top: 4%;
+}
+
+.kayitol-form .form .item-five .policy{
+    display: flex;
+    margin-top: 4.4%;  
+}
+
+.kayitol-form .form .item-five .policy .policy-text{
+    white-space: nowrap;
+    color: #735EBB;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    margin-left: 5%;
+}
+
+.kayitol-form .form .item-five .policy .policy-text-two{
+    white-space: nowrap;
+    color: #735EBB;
+    font-size: 0.9rem;
+    margin-left: 1%;
+}
+
+.kayitol-form .form .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kayitol-form .form .submit input{
+    background-color: #735EBB;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    width: 50%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-radius: 1.2rem;
+    margin-bottom: 2%;
+}
+
+.kayitol-form .form .submit input:hover{
+    background-color: white;
+    color: #735EBB;
+    cursor: pointer;
 }

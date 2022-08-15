@@ -208,18 +208,55 @@ const KayıtOl = () => {
                   </div>
                   <div className="item-four">
                     <div className="child-gender">
-                        <p>Çocuğunuz'un Cinsiyeti</p>
-                        {/* <div className="buttons">
-                            <ButtonGroup>
-                                {radios.map((radio, idx))}
-                            </ButtonGroup>
-                        </div> */}
+                        <p>Çocuğunuzun cinsiyeti</p>
+                        <div className="buttons">
+                            {/* <ButtonGroup>
+                                {radios.map((radio, idx) => (
+                                    <ToggleButton className='toggle-buttons'
+                                        key={idx}
+                                        id={`radio-${idx}`}
+                                        type="radio"
+                                        variant={idx % 2 ? 'outline-secondary' : 'outline-secondary'}
+                                        name="radio"
+                                        value={radio.value}
+                                        checked={radioValue === radio.value}
+                                        onChange={(e) => setRadioValue(e.currentTarget.value)}
+                                        onClick={checkButton}
+                                        onBlur={handleFocus}
+                                        focused={focused.toString()}
+                                    >
+                                        {radio.name}
+                                    </ToggleButton>
+                                ))}
+                             </ButtonGroup> */}
+                            </div>
+                        </div>
+                    <div className="message">
+                        <div className='tip'></div>
+                            <p className="text" >&nbsp; Kayıt sonrası yeni çocuk oluşturabilirsiniz</p>
+                    </div>
+                  </div>
+                  <div className="item-five">
+                    <div className="checkbox">
+                         <input type="checkbox" className='checkbox-button'
+                         onClick={checkPolicy} />
+                    </div>
+                    <div className="policy">
+                        <p className="policy-text">Kullanım Koşullarını ve Gizlilik Sözleşmesini</p>
+                        <p className='policy-text-two'> okudum ve onaylıyorum</p>
                     </div>
                   </div>
                 </div>
-
-
-
+                <div className="submit">
+                    <input type="submit" value="Kayıt Ol" onClick={async () => {
+                        delete values.passwordagain;
+                        values.childGender = radioValue;
+                        console.log(values);
+                        values.fullName && values.email && values.password &&
+                            values.childName && values.childBirthday && checked && checkedPolicy &&
+                            await girisIstekleri() && navigate('/girisyap')
+                }} />
+                </div>
               </form>
             </div>
           </div>
