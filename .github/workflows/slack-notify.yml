@@ -6,14 +6,3 @@ name: Deploy
 
 env:
   REACT_APP_BASE_API_URL: https://kidokitorigin.web.app/
-
-jobs:
-  slackNotification:
-    name: Slack Notification
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Slack Notification
-      uses: rtCamp/action-slack-notify@v2
-      env:
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
