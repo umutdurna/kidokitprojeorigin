@@ -118,7 +118,7 @@ const KayıtOl = () => {
       setCheckedPolicy(true);
   }
 
-  var x=5;
+
 
   const girisIstekleri = async () => {
       const requestOptions = {
