@@ -1,8 +1,0 @@
-name: Deploy
-'on':
-  push:
-    branches:
-     - dev
-
-env:
-  REACT_APP_BASE_API_URL: https://kidokitorigin.web.app/
