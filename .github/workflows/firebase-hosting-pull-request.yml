@@ -17,5 +17,5 @@ jobs:
           projectId: kidokitorigin
 
           payload: |
-            {"text": "Yeni Deploys Geldi" }
+            {"text": "Yeni Deployaa Geldi" }
           
