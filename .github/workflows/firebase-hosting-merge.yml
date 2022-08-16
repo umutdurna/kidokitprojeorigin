@@ -23,8 +23,8 @@ jobs:
   slackNotification:
     needs: build_and_deploy
     name: Slack Notification
-      runs-on: ubuntu-latest
-      steps:
+    runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v2
       - name: Slack Notification
         uses: rtCamp/action-slack-notify@v2
