@@ -1,5 +1,5 @@
-on: push
-name: Slack Notification Demo
+on: pull_request
+name: https://kidokitorigin.web.app/
 jobs:
   slackNotification:
     name: Slack Notification
