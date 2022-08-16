@@ -118,6 +118,8 @@ const KayıtOl = () => {
       setCheckedPolicy(true);
   }
 
+
+
   const girisIstekleri = async () => {
       const requestOptions = {
           method: 'POST',
