@@ -1,8 +1,8 @@
 import './components/kayitol.css';
 import { useNavigate } from 'react-router-dom';
- import { useState } from "react";
- import ButtonGroup from 'react-bootstrap/ButtonGroup';
- import ToggleButton from 'react-bootstrap/ToggleButton';
+import { useState } from "react";
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import ToggleButton from 'react-bootstrap/ToggleButton';
 
 
 const KayıtOl = () => {
@@ -210,7 +210,7 @@ const KayıtOl = () => {
                     <div className="child-gender">
                         <p>Çocuğunuzun cinsiyeti</p>
                         <div className="buttons">
-                            {/* <ButtonGroup>
+                            { <ButtonGroup>
                                 {radios.map((radio, idx) => (
                                     <ToggleButton className='toggle-buttons'
                                         key={idx}
@@ -228,7 +228,7 @@ const KayıtOl = () => {
                                         {radio.name}
                                     </ToggleButton>
                                 ))}
-                             </ButtonGroup> */}
+                             </ButtonGroup> }
                             </div>
                         </div>
                     <div className="message">
