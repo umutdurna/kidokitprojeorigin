@@ -1,0 +1,44 @@
+/* all class .sifre-yenile */
+
+.sifre-yenile .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%
+}
+
+.sifre-yenile .new-password {
+    margin-top: 8%;
+}
+
+.sifre-yenile .header {
+    text-align: center;
+    color: #735EBB;
+}
+
+.sifre-yenile p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.sifre-yenile .new-password {
+    width: 400px;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    border-radius: 0.9rem;
+    border-color: #735EBB;
+    background-color: #44A6B41A;
+    margin-bottom: 4%;
+}
+
+.sifre-yenile .form .inputs{
+    margin-bottom: 5%;
+}
+
+.sifre-yenile .form .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
