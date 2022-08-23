@@ -63,7 +63,7 @@ const ForgotPassword = () => {
         if (apiForget.status === 200) {
             setPopUpState(true);
             console.log("go");
-            setPopUpMessage("E mail adresiniz kontrol edin");
+            setPopUpMessage("E postanızı kontrol edin");
             setPopUpValue("Şifrenizi sıfırlamak için gerekli bağlantı " + values.email + " mailinize gönderildi.");
             setPopUpButtonValue("E Posta Uygulamasını Aç")
             return true
@@ -77,7 +77,7 @@ const ForgotPassword = () => {
             return true
         }
     }
-    
+
     return ( 
        <div className="forgotPassword-form">
             <h1 className="header">Şifre Sıfırlama</h1>
@@ -93,7 +93,7 @@ const ForgotPassword = () => {
                     </div>
                     <br />
                     <div className="submit">
-                        <input style={{ backgroundColor: buttonState === true ? "LightGray" : "" }} type="submit" value="E-Posta Gönder" disabled={buttonState} onClick={async () => {
+                        <input className="submitWidth" style={{ backgroundColor: buttonState === true ? "LightGray" : "" }} type="submit" value="E-Posta Gönder" disabled={buttonState} onClick={async () => {
                             handleSuccesT();
                             values.email && await girisIstekleri()
                         }} focused={success.toString()} />
