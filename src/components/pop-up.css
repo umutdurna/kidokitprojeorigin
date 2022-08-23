@@ -1,0 +1,28 @@
+.pop-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.099);
+}
+
+.pop-up .icerik{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    max-width: 25%;
+    max-height: 50%;
+}
+
+.pop-up .icerik p{
+    margin-bottom: 30%;
+}
+
+.pop-up .icerik .submit input{
+    width: 80%;
+}
