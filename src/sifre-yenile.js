@@ -11,14 +11,14 @@ const SifreYenile = () => {
 
 const [values, setValues] = useState({
     password: "",
-    aktivasyonLink: ""
+    activationLink: ""
 });
 
 
 // useState kullanımları : (Submitte disabled olması için): 
 
 
-const [butonAktifse, butonAktif] = useState(true);
+const [butonAktifse, setButonAktif] = useState(true);
 
 
 
@@ -50,11 +50,11 @@ const inputs = [
     },
     {
         id: 3,
-        name: "aktivasyonLink",
+        name: "activationLink",
         type: "text",
         placeholder: "Link",
-        label: "Aktivasyon Link",
-        topmessage: "Aktivasyon Linki",
+        label: "Link",
+        topmessage: "Activation Link",
         required: true
     }
 ]
@@ -65,10 +65,10 @@ const [focused, setFocused] = useState(false)
 const onChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value })
         if (values.password === values.passwordtekrar) {
-            butonAktif(false);
+            setButonAktif(false);
         }
         else {
-            butonAktif(true);
+            setButonAktif(true);
         }
 }
 
@@ -116,8 +116,8 @@ const girisIstekleri = async () => {
                                 focused={focused.toString()} />
                             <span>{inputs[1].errormessage}</span>
                         </div>
-                        <div className="aktivasyon">
-                            <p>Aktivasyon Linki</p>
+                        <div className="activation">
+                            <p>Activation Link</p>
                             <input className="new-password" key={inputs[2]} {...inputs[2]}
                                 onChange={onChange} />
                         </div>
