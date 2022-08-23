@@ -31,6 +31,8 @@
     width: 60%;
 }
 
+
+
 .forgotPassword-form .form input{
     width: 60%;
     height: 50px;
@@ -39,6 +41,10 @@
     border-radius: 1rem;             
     border-color: #735EBB;
     background-color: #44A6B41A;    
+}
+
+.submitWidth{
+    width: 40;
 }
 
 .emailss{

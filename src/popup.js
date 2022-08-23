@@ -6,6 +6,10 @@ import './components/pop-up.css';
 
 const PopUp = (props) => {
 
+    //props component gibi o sayfanın özelliklerini kullanacağımız yer =>>>
+    
+    //message === "" < Forgot-passworddaki set ettiğimiz açıklama olmazsa özellik aktif hale gelmez ve kabul edilemez.
+
     const navigate = useNavigate();
 
     const message = props.message;
@@ -23,7 +27,7 @@ const PopUp = (props) => {
         <div className="pop-up">
             <div className="icerik">
             {message === "Hata" && <img src={hataliLogo} alt="hata" />}
-            {message === "E mail adresiniz kontrol edin" && <img src={onayLogo} alt="onay" />}
+            {message === "E postanızı kontrol edin" && <img src={onayLogo} alt="onay" />}
             < h1 style={{ color: message === "Hata" ? "#EC4F4F" : "#3CD77A" }} > {message}</h1>
             <p>{value}</p>
             <div className="submit">
