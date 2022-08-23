@@ -7,6 +7,8 @@ import ToggleButton from 'react-bootstrap/ToggleButton';
 
 const KayıtOl = () => {
 
+
+
   const navigate = useNavigate();
 
   const [values, setValues] = useState({
@@ -83,6 +85,8 @@ const KayıtOl = () => {
           required: true
       },
   ]
+
+
 
   const [focused, setFocused] = useState(false)
 
