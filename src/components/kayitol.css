@@ -26,9 +26,11 @@
 
 .kayitol-form .item-three{
     display: flex;
+    margin-top: 20px;
 }
 .kayitol-form .item-four{
     display: flex;
+    margin-top: 20px;
 }
 
 .kayitol-form .item-five{
@@ -104,7 +106,7 @@
     background-repeat: no-repeat;
     width: 18.5px;
     height: 15.5px;
-    margin-top: 5%;
+    margin-top: 1%;
 }
 
 .kayitol-form .form .item-four .message .text{
@@ -117,11 +119,12 @@
 
 .kayitol-form .form .item-five .checkbox{
     margin-top: 4%;
+    margin-right: -10px;
 }
 
 .kayitol-form .form .item-five .policy{
     display: flex;
-    margin-top: 4.4%;  
+    margin-top: 5.5%;  
 }
 
 .kayitol-form .form .item-five .policy .policy-text{

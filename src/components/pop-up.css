@@ -1,0 +1,52 @@
+.pop-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.099);
+}
+
+.pop-up .icerik{
+    position: relative;
+    padding-top: 55px;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    max-width: 30%;
+    max-height: 55%;
+    background-color: white;
+}
+
+.pop-up .icerik p{
+    margin-bottom: 53px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pop-up .icerik .submit input{
+    width: 86%;
+    text-align: center;
+    color: white;
+    background-color: #735EBB;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    border-radius: 1.2rem;
+    max-width: 60%;
+}
+
+.pop-up .icerik h1 {
+    font-size: 1.5rem;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pop-up .icerik .submit input:hover{
+    box-shadow: 1px 1px 2px #675c8e;;
+    background-color: #8064d3;
+}

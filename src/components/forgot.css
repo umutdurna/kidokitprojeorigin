@@ -1,0 +1,80 @@
+.forgotPassword-form .form{
+    margin-top: 2%;              
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forgotPassword-form .header{
+        text-align: center;
+        color: #735EBB;       
+        margin-top: 8%;    
+        margin-bottom: 80px;
+}
+
+.forgotPassword-form .form p{
+    font-size: 1.2rem;           
+    border-color: #735EBB;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.forgotPassword-form .form .inputs{        
+    margin-bottom: 5%;
+}
+
+.forgotPassword-form .form .inputs .top-message{        
+    font-size: 1.2rem;
+    margin-bottom: 6%;
+    margin-left: 20%;
+    text-align: center;
+    width: 60%;
+}
+
+
+
+.forgotPassword-form .form input{
+    width: 60%;
+    height: 50px;
+    padding-top: 5%;
+    padding-bottom: 5%;            
+    border-radius: 1rem;             
+    border-color: #735EBB;
+    background-color: #44A6B41A;    
+}
+
+.submitWidth{
+    width: 40;
+}
+
+.emailss{
+    margin-left: 220px;
+}
+
+.forgotPassword-form .form .submit {
+    display: flex;                  
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.forgotPassword-form .form .submit input {
+    background-color: #735EBB;
+    color: #fff;
+    font-size: 0.9rem;
+    width: auto;
+    height: 50px;
+    text-align: center;             
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    border-radius: 1.2rem;
+    cursor: pointer;
+}
+
+.forgotPassword-form .form .submit input:hover{
+    background-color: #fff;
+    color: #735EBB;
+}
+
