@@ -3,13 +3,12 @@ import './components/forgot.css';
 
 
 
+
 const ForgotPassword = () => {
 
     // State Kullanımları with popup //
     const [success, setSuccess] = useState(true);
-    const [] = useState();
-    const [] = useState();
-
+    const [buttonState, setButtonState] = useState(true);
     const [values, setValues] = useState({
         username: ""
     });
@@ -17,16 +16,15 @@ const ForgotPassword = () => {
     const inputs = [
         {
             id: 1,
-            name: "username",
+            name: "email",
             type: "text",
-            placeholder: " E-posta Adresiniz",
+            placeholder: " E-Posta",
             label: "E-Mail",
             topmessage: "Şifrenizi sıfırlamak için daha önce Kidokit’e üye olduğunuz e-posta adresinizi yazınız",
-            errormessage: "Geçerli bir e-posta adresi giriniz.",
+            errormessage: "lütfen geçerli bir adres girin",
             required: true
         },
     ]
-
 
     const noRefreshSubmit = (e) => {
         e.preventDefault();
@@ -34,6 +32,12 @@ const ForgotPassword = () => {
 
     const onChange = (e) => {
         setValues({ ...values, [e.target.name]: e.target.value })
+        if (values.email.includes("@")) {
+            setButtonState(false);
+        }
+        else {
+            setButtonState(true);
+        }
     }
 
     const handleSuccesT = () => {
@@ -50,13 +54,12 @@ const ForgotPassword = () => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(values)
         };
-        const apiForgot = await fetch('https://testapi.kidokit.com/api/account/forgetPassword', req);
-        if(apiForgot.ok)
-        {
-            console.log("Giriş Başarılı!");
+        const apiForget = await fetch('https://testapi.kidokit.com/api/account/forgetPassword', req);
+        if (apiForget.status === 200) {
+            console.log("go");
         }
-        else{
-            console.log("giriş yapılamadı");
+        else {
+            handleSuccessF();
         }
     }
     
@@ -75,10 +78,10 @@ const ForgotPassword = () => {
                     </div>
                     <br />
                     <div className="submit">
-                        <input type="submit" value="E-posta Gönder" onClick={async () => {
+                        <input style={{ backgroundColor: buttonState === true ? "LightGray" : "" }} type="submit" value="E-Posta Gönder" disabled={buttonState} onClick={async () => {
                             handleSuccesT();
-                            values.username && await girisIstekleri()
-                        }} focused={success.toString()}  /> 
+                            values.email && await girisIstekleri()
+                        }} focused={success.toString()} />
                     </div>
                 </form>
             </div>
