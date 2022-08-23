@@ -1,7 +1,7 @@
 import { useState } from "react";
 import './components/forgot.css';
-
-
+import './popup.js';
+import PopUp from './popup.js';
 
 
 const ForgotPassword = () => {
@@ -9,6 +9,11 @@ const ForgotPassword = () => {
     // State Kullanımları with popup //
     const [success, setSuccess] = useState(true);
     const [buttonState, setButtonState] = useState(true);
+    const [popState, setPopUpState] = useState(false);
+    const [popValue, setPopUpValue] = useState("");
+    const [popMessage, setPopUpMessage] = useState("");
+    const [popButtonValue, setPopUpButtonValue] = useState("");
+
     const [values, setValues] = useState({
         username: ""
     });
@@ -32,10 +37,10 @@ const ForgotPassword = () => {
 
     const onChange = (e) => {
         setValues({ ...values, [e.target.name]: e.target.value })
-        if (values.email.includes("@")) {
+        if(values.email.includes("@")) {
             setButtonState(false);
         }
-        else {
+        else{
             setButtonState(true);
         }
     }
@@ -56,10 +61,20 @@ const ForgotPassword = () => {
         };
         const apiForget = await fetch('https://testapi.kidokit.com/api/account/forgetPassword', req);
         if (apiForget.status === 200) {
+            setPopUpState(true);
             console.log("go");
+            setPopUpMessage("E mail adresiniz kontrol edin");
+            setPopUpValue("Şifrenizi sıfırlamak için gerekli bağlantı " + values.email + " mailinize gönderildi.");
+            setPopUpButtonValue("E Posta Uygulamasını Aç")
+            return true
         }
         else {
             handleSuccessF();
+            setPopUpState(true);
+            setPopUpMessage("Hata");
+            setPopUpValue("E Posta adresinize şifre sıfırlama maili gönderilemedi");
+            setPopUpButtonValue("Tekrar E-Posta Gönder")
+            return true
         }
     }
     
@@ -85,6 +100,7 @@ const ForgotPassword = () => {
                     </div>
                 </form>
             </div>
+            {popState && <PopUp message={popMessage} value={popValue} buttonValue={popButtonValue} />}
        </div>
      );
 }
