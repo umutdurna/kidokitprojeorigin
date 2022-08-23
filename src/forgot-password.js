@@ -93,7 +93,7 @@ const ForgotPassword = () => {
                     </div>
                     <br />
                     <div className="submit">
-                        <input className="submitWidth" style={{ backgroundColor: buttonState === true ? "LightGray" : "" }} type="submit" value="E-Posta Gönder" disabled={buttonState} onClick={async () => {
+                        <input className="submitWidth" style={{ backgroundColor: buttonState === true ? "#c6bfdc" : "" }} type="submit" value="E-Posta Gönder" disabled={buttonState} onClick={async () => {
                             handleSuccesT();
                             values.email && await girisIstekleri()
                         }} focused={success.toString()} />
