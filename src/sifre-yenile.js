@@ -18,8 +18,10 @@ const [values, setValues] = useState({
 // useState kullanımları : (Submitte disabled olması için): 
 
 
-const [butonAktifse, setButonAktif] = useState(true);
 
+
+
+const [isButtonActive, setIsButtonActive] = useState(true);
 
 
 
@@ -64,19 +66,19 @@ const [focused, setFocused] = useState(false)
 // Buton Aktif olup olmama ayarlama onChange kısmı : (password aynı olması için)
 const onChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value })
-        if (values.password === values.passwordtekrar) {
-            setButonAktif(false);
-        }
-        else {
-            setButonAktif(true);
-        }
+    if (values.password === values.passwordtekrar) {
+        setIsButtonActive(false);
+    }
+    else {
+        setIsButtonActive(true);
+    }
 }
 
 const focusHandle = () => {
     setFocused(true);
 }
 
-const girisIstekleri = async () => {
+const girisIstekleris = async () => {
     const req = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -95,17 +97,17 @@ const girisIstekleri = async () => {
 
     return ( 
         <div className="sifre-yenile">
-            <div className="header">Yeni Bir Şifre Belirleyiniz</div>
+            <h1 className="header"> Yeni Bir Şifre Belirleyiniz</h1>
             <div className="form">
                 <form>
                     <div className="sifre-yenile">
                         <div className="password">
                         <p>{inputs[0].topmessage}</p>
-                            <input className="new-password" key={inputs[0]} {...inputs[0]}
-                                value={values[inputs[0].name]}
-                                onChange={onChange}
-                                onBlur={focusHandle}
-                                focused={focused.toString()} />
+                        <input className="new-password" key={inputs[0]} {...inputs[0]}
+                               value={values[inputs[0].name]}
+                               onChange={onChange}
+                               onBlur={focusHandle}
+                               focused={focused.toString()} />
                             <span>{inputs[0].errormessage}</span>
                         </div>
                         <div className="password-two">
@@ -123,8 +125,8 @@ const girisIstekleri = async () => {
                         </div>
                     </div>
                     <div className="submit">
-                        <input type="submit" disabled={butonAktifse} className="sifre-yenile-submits" value="Kayıt Ol"
-                            onClick={async () => { await delete values.passwordtekrar; girisIstekleri() && navigate('/girisyap') }} />
+                        <input type="submit" disabled={isButtonActive} className="new-password-submit" value="Kayıt Ol"
+                            onClick={async () => { await delete values.passwordagain; girisIstekleris() && navigate('/girisyap') }} />
                     </div>
                 </form>
             </div>
