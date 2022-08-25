@@ -1,44 +1,55 @@
 /* all class .sifre-yenile */
 
-.sifre-yenile .form{
+.sifre-yenile-formu .header {
+    text-align: center;
+    color: #735EBB;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+.sifre-yenile-formu .form{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2%
 }
 
-.sifre-yenile .new-password {
-    margin-top: 8%;
+.sifre-yenile-formu .new-password {
+    margin-top: 2%;
 }
 
-.sifre-yenile .header {
-    text-align: center;
-    color: #735EBB;
-}
-
-.sifre-yenile p {
+.sifre-yenile-formu .form p {
     font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
-.sifre-yenile .new-password {
+.sifre-yenile-formu .new-password {
     width: 400px;
-    padding-bottom: 1.5%;
+    padding-bottom: 1.6%;
     padding-top: 1.5%;
     border-radius: 0.9rem;
-    border-color: #735EBB;
+    border-color: #e6e5ea;
     background-color: #44A6B41A;
-    margin-bottom: 4%;
+    margin-bottom: 8%;
 }
 
-.sifre-yenile .form .inputs{
-    margin-bottom: 5%;
-}
-
-.sifre-yenile .form .submit {
+.sifre-yenile-formu .form .submit {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.sifre-yenile-formu .form .submit input {
+    background-color: #735EBB;
+    max-width: 30%;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-radius: 1.2rem;
+    margin-right: 20%;
 }
