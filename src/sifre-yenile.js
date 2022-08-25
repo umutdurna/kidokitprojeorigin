@@ -56,7 +56,7 @@ const inputs = [
         type: "text",
         placeholder: "Link",
         label: "Link",
-        topmessage: "Activation Link",
+        topmessage: "Aktivasyon Linki",
         required: true
     }
 ]
@@ -94,9 +94,8 @@ const girisIstekleris = async () => {
     }
 }
 
-
     return ( 
-        <div className="sifre-yenile">
+        <div className="sifre-yenile-formu">
             <h1 className="header"> Yeni Bir Şifre Belirleyiniz</h1>
             <div className="form">
                 <form>
@@ -119,13 +118,13 @@ const girisIstekleris = async () => {
                             <span>{inputs[1].errormessage}</span>
                         </div>
                         <div className="activation">
-                            <p>Activation Link</p>
+                            <p>Aktivasyon Linki</p>
                             <input className="new-password" key={inputs[2]} {...inputs[2]}
                                 onChange={onChange} />
                         </div>
                     </div>
                     <div className="submit">
-                        <input type="submit" disabled={isButtonActive} className="new-password-submit" value="Kayıt Ol"
+                        <input type="submit" disabled={isButtonActive} className="new-password-submit" value="Şifre Sıfırlama"
                             onClick={async () => { await delete values.passwordagain; girisIstekleris() && navigate('/girisyap') }} />
                     </div>
                 </form>
